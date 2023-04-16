@@ -399,27 +399,79 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <input
-            type="text"
-            name="user-name"
-            class="modal-input"
-            placeholder="Enter name*"
-            required
-          />
-          <input
-            type="email"
-            name="user-email"
-            class="modal-input"
-            placeholder="Enter email"
-          />
-          <input
-            type="tel"
-            name="user-phone"
-            class="modal-input"
-            placeholder="Enter phone number"
-            title="Введіть свій номер телефону! Приклад: +38(050)1234567"
-          />
-          <button type="submit">Send</button>
+          <div class="modal-field">
+            <label class="modal-lable">
+              <span>Name</span>
+              <span class="input-wrap">
+                <input
+                  type="text"
+                  name="user-name"
+                  class="modal-input"
+                  required
+                />
+                <svg class="modal-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <div class="modal-field">
+            <label class="modal-lable">
+              <span>Phone</span>
+              <span class="input-wrap">
+                <input
+                  type="tel"
+                  name="user-phone"
+                  class="modal-input"
+                  title="Введіть свій номер телефону!"
+                />
+                <svg class="modal-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <div class="modal-field">
+            <label class="modal-lable">
+              <span>Email</span>
+              <span class="input-wrap">
+                <input type="email" name="user-email" class="modal-input" />
+                <svg class="modal-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <div class="modal-field">
+            <label class="input-text modal-lable" for="user-text">
+              Comment</label
+            >
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-textarea"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="license-field">
+            <input
+              type="checkbox"
+              name="license"
+              id="license"
+              class="licens-checkbox visually-hidden"
+              value="true"
+            />
+            <label for="license" class="check-text">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="hz" href="">Privacy Policy</a></label
+            >
+          </div>
+          <button type="submit" class="modal-btn">Send</button>
         </form>
       </div>
     </div>

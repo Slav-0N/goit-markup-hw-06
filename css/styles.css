@@ -586,7 +586,8 @@ margin-bottom: 72px;
 .subscribe-input-wrap {
    display: flex;
    align-items: flex-end;
-
+   
+   
 
  
 }
@@ -601,16 +602,22 @@ margin-bottom: 72px;
     line-height: 1.5;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    padding: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: none;
+    outline: none;
  }
 
 .subscribe-btn-icon {
     position: absolute;
     right: 24px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-30%);
+    
 }
 
 .subscribe-title {
@@ -634,6 +641,9 @@ margin-bottom: 72px;
     border-radius: 4px;
     background-color: transparent;
     box-shadow: none;
+    padding-left: 24px;
+    color: #ffffff;
+    outline: none;
 }
 
 .modal-btn {
@@ -657,14 +667,18 @@ color: #FFFFFF;
 }
 
 .subscribe-input::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
     font-size: 12px;
-    line-height: 2;
-  
+    line-height: 1.5;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    left: 16px;
-    margin-left: 40px;
+    
+
 }
+
+.
 
 /** ----------------- *** Modal *** ----------------*/
 
